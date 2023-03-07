@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		/* Sidebar */
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 200px;
+			background-color: #f1f1f1;
+			overflow-x: hidden;
+			padding-top: 20px;
+		}
+		.sidebar a {
+			display: block;
+			padding: 16px;
+			text-decoration: none;
+			color: #000;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.sidebar a.active {
+			background-color: #4CAF50;
+			color: #fff;
+		}
+		.sidebar a:hover:not(.active) {
+			background-color: #555;
+			color: #fff;
+		}
+		/* Content */
+		.content {
+			padding: 20px;
+		}
+		/* Container */
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.container .sidebar {
+			flex: 0 0 200px;
+		}
+		.container .content {
+			flex: 1;
+			margin-left: 20px;
+		}
+		/* Responsive */
+		@media screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+			}
+			.container .sidebar {
+				flex: 1 0 auto;
+			}
+			.container .content {
+				flex: 1 0 auto;
+				margin-left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<a href="#" class="active">Home</a>
+			<a href="page2.html">HTML</a>
+			<a href="#">CSS</a>
+			<a href="#">JavaScript</a>
+			<a href="#">SQL</a>
+			<a href="#">PHP</a>
+		</div>
+		<div class="content">
+			<h1>Welcome to my page</h1>
+			<p>This is the main content of my page.</p>
+		</div>
+	</div>
+</body>
+</html>

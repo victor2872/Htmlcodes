@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>forms and tables combined</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>please fill the servey form</legend>
+            <table border="2"
+            <tr>
+                <td colspan="2"> firstName<input type="text" name="name"/></td>
+                <td colspan="2"> lastName<input type="text" name="lastname"/></td>
+            </tr>
+            <tr>
+           
+<form action="city"> choose city:</city>
+  <label for="city">Choose a city:</label>
+  <select id="city" name="city" size="4" multiple>
+    <option value="nakuru">nakuru</option>
+    <option value="eldoret">eldoret</option>
+    <option value="nairobi">nairobi</option>
+    <option value="kisumu">kisumu</option>
+  </select><br><br>
+</form>
+                </td>
+                <td>choose sport</td>
+                <td>
+                    <input type="radio" name="radio">basketball</input>
+                    <input type="radio" name="hockey">hockey</input>
+                    <input type="radio" name="football">football</input>
+                </td>
+            </tr>
+            

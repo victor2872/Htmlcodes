@@ -1,0 +1,23 @@
+cd C:\Users\HP\Documents\NetBeansProjects\mavenproject7; "JAVA_HOME=C:\\Program Files\\Java\\jdk-19" cmd /c "\"C:\\Program Files\\NetBeans-14\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.mycompany.mavenproject7.Mavenproject7 \"-Dexec.executable=C:\\Program Files\\Java\\jdk-19\\bin\\java.exe\" \"-Dmaven.ext.class.path=C:\\Program Files\\NetBeans-14\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar\" org.codehaus.mojo:exec-maven-plugin:3.0.0:exec"
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+
+--------------------< com.mycompany:mavenproject7 >---------------------
+Building mavenproject7 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- exec-maven-plugin:3.0.0:exec (default-cli) @ mavenproject7 ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.10.1/maven-artifact-transfer-0.10.1.pom
+------------------------------------------------------------------------
+BUILD FAILURE
+------------------------------------------------------------------------
+Total time:  0.542 s
+Finished at: 2023-02-08T19:15:00+03:00
+------------------------------------------------------------------------
+Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:exec (default-cli) on project mavenproject7: Execution default-cli of goal org.codehaus.mojo:exec-maven-plugin:3.0.0:exec failed: Plugin org.codehaus.mojo:exec-maven-plugin:3.0.0 or one of its dependencies could not be resolved: Failed to collect dependencies at org.codehaus.mojo:exec-maven-plugin:jar:3.0.0 -> org.apache.maven.shared:maven-artifact-transfer:jar:0.10.1: Failed to read artifact descriptor for org.apache.maven.shared:maven-artifact-transfer:jar:0.10.1: Could not transfer artifact org.apache.maven.shared:maven-artifact-transfer:pom:0.10.1 from/to central (https://repo.maven.apache.org/maven2): transfer failed for https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.10.1/maven-artifact-transfer-0.10.1.pom: Unknown host No such host is known (repo.maven.apache.org) -> [Help 1]
+
+To see the full stack trace of the errors, re-run Maven with the -e switch.
+Re-run Maven using the -X switch to enable full debug logging.
+
+For more information about the errors and possible solutions, please read the following articles:
+[Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
